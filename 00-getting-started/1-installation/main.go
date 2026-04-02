@@ -44,6 +44,6 @@ func main() {
 	fmt.Printf("GOROOT:        %s\n", runtime.GOROOT())
 
 	fmt.Println()
-	fmt.Println("🎉 Your Go development environment is ready!")
+	fmt.Println("🎉 Your Go development environment is ready to hack!")
 	fmt.Println("   Next step: go run ./00-getting-started/2-hello-world")
 }
