@@ -57,3 +57,10 @@ func TestProcessOrderRejectsNegativeShipping(t *testing.T) {
 		t.Fatal("expected negative shipping to fail")
 	}
 }
+
+func TestProcessOrderEmptyPrices(t *testing.T) {
+	_, err := processOrder("empty cart", []int{}, 10)
+	if err == nil {
+		t.Fatal("expected error for empty prices, got success")
+	}
+}
