@@ -46,6 +46,20 @@ Check subcommand-specific help:
 go run ./05-packages-io/02-io-and-cli/cli-tools/3-subcommands greet -help
 ```
 
+## Verification Surface
+
+When you run the `version` subcommand, you should see your current operating system:
+
+```bash
+go run ./05-packages-io/02-io-and-cli/cli-tools/3-subcommands version
+```
+
+**Expected Output:**
+```text
+The Go Engineer CLI v1.0.0
+Built with: go1.26
+```
+
 ## Code Walkthrough
 
 ### `switch os.Args[1]`
